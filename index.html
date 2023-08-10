@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MSC Dissertation</title>
+    <style>
+        /* Global styles */
+        body {
+            background: #bcc8cf;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family: 'Times New Roman', sans-serif;
+            line-height: 150%;
+        }
+
+        /* Custom CSS for the GitHub link */
+        .github-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #3c5066;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .github-link:hover {
+            background-color: #528bd5;
+        }
+
+        /* Header styles */
+        .header {
+            width: 750pt;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #89989c;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .header img.image {
+            border-radius: 15px;
+        }
+
+        /* Menu styles */
+        .menu {
+            width: 750pt;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #89989c;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        #menu_links {
+            color: #fff;
+            text-decoration: none;
+            padding: 3px;
+        }
+
+        #menu_links:hover {
+            background-color: #6f95c6;
+        }
+
+        /* Centered content styles */
+        .centre {
+            width: 750pt;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #F8F8F8;
+            text-align: center;
+            border-radius: 20px;
+            padding-bottom: 15px;
+        }
+
+        .centre h3 {
+            text-align: center;
+        }
+
+        .centre p,
+        .centre ul {
+            text-align: justify;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .centre img.image {
+            border-radius: 15px;
+        }
+    </style>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Heading -->
+    <table class="header">
+        <tr>
+            <td>
+                <div style="text-align:center">
+                    <img class="image" src="header.png">
+                </div>
+                <h1>Forest Disturbance Mapping Using Radar Imagery.</h1>
+                <h2>By Rajat Dhane</h2>
+                <h2>Supervisor - Dr. Steven Hancock</h2>
+                <!-- GitHub Link with custom CSS class -->
+                <a href="https://github.com/Rajat1097/Msc_Dissertation_UOE" target="_blank" class="github-link">GitHub</a>
+            </td>
+        </tr>
+    </table>
+<br>
+    <!-- Menu -->
+    <table class="menu">
+        <tr>
+            <td>
+                <h4>
+                    <a id="menu_links" href="#abs">ABSTRACT</a> |
+                    <a id="menu_links" href="#aim">RESEARCH QUESTION</a> |
+                    <a id="menu_links" href="#sa">STUDY AREA</a> |
+                    <a id="menu_links" href="#meth">METHODOLOGY</a> |
+                    <a id="menu_links" href="#res">RESULTS</a> |
+                    <a id="menu_links" href="#conc">CONCLUSION</a> |
+                    <a id="menu_links" href="#ref">KEY REFERENCES</a>
+                </h4>
+            </td>
+        </tr>
+    </table>
+<br>
+
+    <!-- Abstract -->
+    <table class="centre">
+        <a name="abs"></a>
+        <tr>
+            <td>
+                <h3>Abstract</h3>
+                    <p>Tropical forests play a crucial role in mitigating global warming and addressing climate change.
+                    However, the increasing degradation of these forests due to different natural and anthropogenic factors
+                    necessitates the establishment of robust monitoring systems. While earth observation techniques offer a
+                    means to monitor large areas, cloud cover poses a challenge to optical systems in the tropics. In such
+                    circumstances, synthetic aperture radar (SAR) imaging turns out to be a useful tool for forest monitoring.</p>
+                    <p>This study presents a methodology based on the Cumulative Sum algorithm, utilizing VV, VH, a combination 
+                    of VV+VH, and the normalization of the same set of polarization of the Sentinel-1 GRD data for year 2022 in 
+                    Gabon. The proposed method effectively detects the spatial and temporal occurrences of logging events in Gabon. 
+                    The achieved overall accuracy of the method reaches 68.73%. Importantly, it demonstrates superior performance 
+                    in identifying smaller disturbances compared to existing RADD alerts.</p>
+                    <p>The findings of this study underscore the efficacy of the proposed method in detecting forest disturbances
+                    within tropical regions. This approach holds significant promise for enhancing monitoring efforts and supporting 
+                    conservation initiatives in these critical ecosystems.</p>
+                    <p><b>Keywords:</b>Tropics, Forest disturbance, CUSUM, Sentiel-1, Monitoring. </p>
+                <!-- -->
+            </td>
+        </tr>
+    </table>
+<br>
+
+    <!-- AIM OBJ RQ -->
+    <table class="centre">
+        <a name="aim"></a>
+        <tr>
+            <td style="text-align: center;">
+                <h3>Aim</h3>
+                <p>To evaluate the effectiveness of the Cusum method on Sentinel-1 data for detecting forest disturbance in the tropical forest of Gabon in 2022.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">
+                <h3>Objectives</h3>
+                <ol>
+                    <li>To detect the areas of forest disturbance.</li>
+                    <li>To evaluate the performance of the Cusum method.</li>
+                    <li>To address the implications of the findings for forest management.</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <h3>Research Question</h3>
+                <p>How effective is the utilization of time-series Sentinel-1 Synthetic Aperture Radar (SAR) data with normalization of polarization in detecting forest disturbances in Gabon?</p>
+            </td>
+        </tr>
+        <!-- -->
+    </table>
+
+<br>
+    <!-- Study Area -->
+    <table class="centre">
+        <a name="sa"></a>
+        <tr>
+            <td style="text-align: center;">
+                <h3>Study Area</h3>
+                <p>Study site is in Gabon</p>
+                <img  class="image" src="sa.jpg" width = 400pt id="palmpic">
+            </td>
+        </tr>
+        <!-- -->
+    </table>
+
+<br>
+
+    <!-- Methodology -->
+    <table class="centre">
+        <a name="meth"></a>
+        <tr>
+            <td>
+                <h3>Methodology</h3>
+                <p>When we plot the backscatter intensity of Sentinel 1 SAR data in timeseries it is difficult
+                    to differentiate between disturbed and undisturbed pixels</p>
+                    <img  class="image" src="backscatter.png" width = 400pt id="palmpic">
+
+                <p>Equation used to calculate CUSUM of timeseries data</p>
+                <img class="image" src="eq1.JPG" width = 330pt id="palmpic">
+
+                <p>Equation used to calculate CUSUM for normalized polarization data</p>
+                <img class="image" src="eq2.JPG" width = 330pt id="palmpic">
+
+                <p>Following figure shows how CUSUM helps in differentiating disturbed and undisturbed pixels</p>
+                    <img class="image" src="Cusum.png" width = 400pt id="palmpic">
+
+                <p>The diagram below represents the methodological steps followed in this research project</p>
+                <img class="image" src="methodology.JPG" width = 660pt id="palmpic"> 
+                <!-- -->
+            </td>
+        </tr>
+    </table>
+<br>
+
+<!-- Results -->
+    <table class="centre">
+        <a name="res"></a>
+        <tr>
+            <td>
+                <h3>Results</h3>
+                <p>The resulting canopy cover changes detected by the CUSUM approach are presented in the figure below. .</p>
+                <img  class="image" src="map.jpg" width="500pt" height="500pt" id="palmpic" >
+
+                <p>Table below provides a comprehensive analysis of the accuracy achieved using different parameters and polarization combinations for felled tree detection. </p>
+                <img class="image" src="result.JPG" width = 600pt id="palmpic" >
+                <!--  -->
+            </td>
+        </tr>
+    </table>
+<br>
+
+<!-- Conclusion -->
+    <table class="centre">
+        <tr>
+            <td>
+                <a name="conc"></a>
+                <h3>Conclusions</h3>
+                <p>In conclusion, this study employed a method that effectively detected annual forest loss resulting from forest disturbances in Gabon using time-series Sentinel-1 Synthetic Aperture Radar (SAR) data. The utilization of CUSUM values derived from backscatter data in time-series analysis demonstrated the radar's capability to detect structural changes occurring in the forest canopy. The innovative approach of normalizing polarization data yielded improved results compared to the direct utilization of polarization data, however the improvement was not statistically significant. The overall accuracy achieved for VH polarization was 67.30%, while for normalized VH polarization, it was slightly higher at 68.44%. </p>
+                <p>Notably, the algorithm employed in this study outperformed the currently available RADD alerts by detecting a greater number of disturbances. The results of our tests indicate that RADD alerts outperform CUSUM in near real-time detection due to its capability to detect variations with a shorter baseline. RADD alerts are particularly valuable for timely detection of forest disturbances. On the other hand, CUSUM excels in generating yearly change maps, providing a comprehensive view of forest disturbance patterns over longer time frames. </p>
+                <p>Future research should focus on using CUSUM method with forthcoming L-band NISAR and P-band BIOMASS SAR data. Furthermore, researchers can explore the applicability of this method in detecting forest regrowth and its adaptability across various forest types. The production of yearly canopy change maps facilitated by this method will offer valuable insights for forest conservation initiatives, such as the United Nations' REDD+ program.</p>
+                <!--  -->
+            </td>
+        </tr>
+    </table>
+<br>
+
+<!-- References -->
+    <table class="centre">
+        <a name="ref"></a>
+        <tr>
+            <td>
+                <h3>References</h3>
+                <p>Aquino, C. et al. (2022) “Reliably mapping low-intensity forest disturbance using satellite radar data,” Frontiers in Forests and Global Change, 5. Available at: https://doi.org/10.3389/ffgc.2022.1018762</p>
+                <p>Ruiz-Ramos, J. et al. (2020) “Continuous Forest monitoring using cumulative sums of sentinel-1 timeseries,” Remote Sensing, 12(18), p. 3061. Available at: https://doi.org/10.3390/rs12183061  </p>
+                <p>Ygorra, B. et al. (2021) “Monitoring loss of tropical forest cover from sentinel-1 time-series: A CUSUM-based approach,” International Journal of Applied Earth Observation and Geoinformation, 103, p. 102532. Available at: https://doi.org/10.1016/j.jag.2021.102532.</p>
+                <!--  -->
+            </td>
+        </tr>
+    </table>
+<br>
+
+<p style="color:#0f0e0e; text-align: center"><b>August 2023 - Rajat Dhane</b></p>
+
+</body>
+</html>
